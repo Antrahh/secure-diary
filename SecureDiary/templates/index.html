@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Diary</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(#f8e9f3, #f4eef9); /* soft pink-lavender gradient */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .title {
+            font-size: 38px;
+            color: #4a3f6b;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .lock {
+            font-size: 60px;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.85); /* soft transparent white like your design */
+            width: 350px;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 25px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #4a3f6b;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background: #8d73d1; /* purple */
+        }
+
+        .signup-btn {
+            background: #f08ca8; /* pink */
+        }
+
+        .diary-btn {
+            background: #39c6d6; /* teal */
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title"><span class="lock">🔒</span> Secure Diary</div>
+
+        <div class="box">
+            <h2>Welcome 🌸</h2>
+
+            <a href="/login"><button class="login-btn">Login</button></a>
+            <a href="/signup"><button class="signup-btn">Sign Up</button></a>
+            <a href="/write"><button class="diary-btn">Diary Entry</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

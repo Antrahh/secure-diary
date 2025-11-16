@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Entry</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(#f8e9f3, #f4eef9);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.85);
+            width: 380px;
+            padding: 30px;
+            margin: 60px auto;
+            border-radius: 25px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+        }
+
+        textarea {
+            width: 90%;
+            height: 150px;
+            border-radius: 15px;
+            padding: 10px;
+            border: 1px solid #d7ccea;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #39c6d6;
+            border: none;
+            border-radius: 15px;
+            font-size: 17px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #4a3f6b;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Write Diary Entry 🌸</h2>
+
+        <form method="POST" action="/write?username={{ username }}&password={{ password }}">
+            <textarea name="entry" placeholder="Write your thoughts..." required></textarea>
+
+            <button type="submit">Save Entry</button>
+        </form>
+
+        <br>
+        <a href="/read?username={{ username }}&password={{ password }}"class="btn">Read Entries</a>
+        <br><br>
+        <a href="/">Logout</a>
+    </div>
+
+</body>
+</html>

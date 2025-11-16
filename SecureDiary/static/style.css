@@ -1,0 +1,95 @@
+/* 🌸 Cute Pastel Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe4ec, #e6e1ff, #d2f7ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.container {
+    background: #ffffff;
+    width: 450px;
+    padding: 30px 25px;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border: 3px solid #ffd7e7;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff69ad;
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+/* Pastel button colors */
+.btn-login { background: #ff84b7; }
+.btn-login:hover { background: #ff6da7; }
+
+.btn-signup { background: #b39efc; }
+.btn-signup:hover { background: #9b85f7; }
+
+.btn-write { background: #79e3dc; }
+.btn-write:hover { background: #61d4cd; }
+
+.btn-read { background: #ffe07f; color: #7d5f00; }
+.btn-read:hover { background: #ffd65b; }
+
+.btn-delete { background: #ff6b6b; }
+.btn-delete:hover { background: #ff4b4b; }
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 14px;
+    border: 2px solid #ffd7e7;
+    background: #fff7fb;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff7fb0;
+    background: #fff0f7;
+    outline: none;
+}
+
+/* Diary entries */
+.entry-box {
+    background: #fff0fa;
+    padding: 12px;
+    margin: 10px 0;
+    border-left: 5px solid #ff84b7;
+    border-radius: 12px;
+}
